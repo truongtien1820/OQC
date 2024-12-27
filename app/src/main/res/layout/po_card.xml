@@ -1,0 +1,138 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/curved_background_item_rcv"
+    android:layout_margin="8dp">
+
+
+    <TextView
+        android:id="@+id/tc_infwno001_002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tc_wnoinf001"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+       >
+
+       <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       >
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/recycler_img"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="8dp"
+               android:padding="4dp"
+               />
+
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/tc_infwno003_004"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mã/ten khách hàng"
+                android:textSize="18dp"
+                android:textColor="#666" />
+            <TextView
+                android:id="@+id/tc_infwno005"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ngày đông ý giao hàng"
+                android:textSize="18dp"
+                android:textColor="#666" />
+            <TextView
+                android:id="@+id/tc_infwno006"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Số lượng"
+                android:textSize="18dp"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/tc_infwno007_008"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MVL/tên tiếng việt"
+                android:textSize="18dp"
+                android:textColor="#666" />
+            <TextView
+                android:id="@+id/tc_infwno009"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Quy cách"
+                android:textSize="18dp"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/tc_infwno010"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mã đơn đặt hàng KH"
+                android:textSize="18dp"
+                android:textColor="#666" />
+            <TextView
+                android:id="@+id/tc_infwno011_012"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="MS/Mã nhan hiệu"
+                android:textSize="18dp"
+                android:textColor="#666" />
+            <TextView
+                android:id="@+id/tc_infwno013"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mã đơn công"
+                android:textSize="18dp"
+                android:textColor="#666" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnAction_Choice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="Choice"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFF"
+            android:gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

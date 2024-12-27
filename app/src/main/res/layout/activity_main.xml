@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquoise"
+    tools:context=".MainActivity">
+
+    <!-- FrameLayout chứa nội dung Fragment -->
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation" />
+
+    <!-- NafisBottomNavigation ở dưới cùng -->
+    <com.nafis.bottomnavigation.NafisBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:mbn_circleColor="#D2B48C"
+        app:mbn_backgroundBottomColor="#FFF8DC"
+        app:mbn_countBackgroundColor="#FFD700"
+        app:mbn_countTextColor="#ffffff"
+        app:mbn_countTypeface="fonts/SourceSansPro-Regular.ttf"
+        app:mbn_defaultIconColor="#E08F56"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#8B4513"
+        app:mbn_shadowColor="#1f212121"
+        app:mbn_hasAnimation="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

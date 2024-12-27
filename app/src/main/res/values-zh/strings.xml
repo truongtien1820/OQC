@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">出貨OQC</string>
+    <string name="main_language">語言</string>
+    /*check version*/
+    <string name="ver_curr_version">當前版本: </string>
+    <string name="ver_new_version">新版本：</string>
+    <string name="ver_install">請安裝!</string>
+    <string name="ver_soft_update">軟件更新</string>
+    <string name="ver_update">更新</string>
+    <string name="ver_downloading">正在下載</string>
+    <string name="ver_please_wait">請稍後...</string>
+    <string name="ver_no_update">目前版本為最新版本</string>
+    <string name="ver_check_fail">無法檢查更新，請稍後重試</string>
+    <string name="ver_cancel">取消</string>
+    <string name="ver_download_fail">下載失敗</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+    /*Menu Button*/
+    <string name="Change_Data">同步資料</string>
+    <string name="delete_all_data">清空所有資料庫</string>
+    <string name="code_item">料件編號</string>
+    /* activity_main */
+    <string name="main_id">帳號：</string>
+    <string name="main_pwd">密碼：</string>
+    <string name="main_ok">確定</string>
+    <string name="main_cancel">取消</string>
+    <string name="main_E01">請輸入帳號</string>
+    <string name="main_E02">帳號密碼錯誤</string>
+    <string name="main_E03">連線錯誤</string>
+    <string name="main_SignIn">註冊帳戶</string>
+    <string name="main_stay_logged">保持登入</string>
+    <string name="check_1">首件產品質量檢驗表</string>
+    <string name="check_2">質量巡邏檢驗表</string>
+    <string name="check_3">射出機檢驗記錄表</string>
+    /* Sign In */
+    <string name="account"> 账号</string>
+    <string name="password">密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="department">部门</string>
+    <string name="email">邮箱地址</string>
+
+    /*quality_first*/
+    <string name="btn_ok">確定</string>
+    <string name="btn_forward">結轉</string>
+    <string name="btn_pileofsets">同步</string>
+    <string name="transitionstatus">已結轉</string>
+    <string name="list">已檢查清單</string>
+    <string name="productappearance">外觀</string>
+    <string name="numericalorder">序號</string>
+    <string name="consumption">=量測日期</string>
+
+    <string name="btn_delete">刪除</string>
+    <string name="btn_query">查詢</string>
+    <string name="btn_edit">修改</string>
+
+    <string name="Product_No">產品編號</string>
+    <string name="Agreed_shipping_date">約定交貨日</string>
+    <string name="POID">訂單單號</string>
+    <string name="number">項次</string>
+    <string name="quantity">數量</string>
+    <string name="customer_id">送貨客戶代號</string>
+    <string name="PO_customer">客戶訂單單號</string>
+    <string name="name_customer">客戶名稱</string>
+    <string name="name_product">品名</string>
+    <string name ="name_product_vn">越文品名</string>>
+    <string name= "Trademark_code">商標代碼</string>
+    <string name="Mold_number">商標代碼</string>
+   <string name = "specification_vn">越文規格</string>
+    <string name= "Specifications">規格</string>
+    <string name= "work_number">工單編號</string>
+</resources>

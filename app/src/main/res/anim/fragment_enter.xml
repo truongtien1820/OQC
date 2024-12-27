@@ -1,0 +1,28 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Di chuyển từ góc trái dưới -->
+    <translate
+        android:fromXDelta="-100%"
+        android:toXDelta="0%"
+        android:fromYDelta="100%"
+        android:toYDelta="0%"
+        android:duration="1000"
+        android:interpolator="@android:anim/decelerate_interpolator" />
+
+    <!-- Thu phóng lớn dần -->
+    <scale
+        android:fromXScale="0.5"
+        android:toXScale="1.0"
+        android:fromYScale="0.5"
+        android:toYScale="1.0"
+        android:pivotX="0%"
+        android:pivotY="100%"
+        android:duration="1000" />
+
+    <!-- Quay nhẹ khi di chuyển -->
+    <rotate
+        android:fromDegrees="-30"
+        android:toDegrees="0"
+        android:pivotX="0%"
+        android:pivotY="100%"
+        android:duration="1000" />
+</set>

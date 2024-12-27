@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OQCxuathang</string>
+    /*check version*/
+    <string name="ver_curr_version">Phiên bản hiện tại : </string>
+    <string name="ver_new_version">Phiên bản mới：</string>
+    <string name="ver_install">Xin hãy cài đặt!</string>
+    <string name="ver_soft_update">Cập nhật phần mềm</string>
+    <string name="ver_update">Cập nhật</string>
+    <string name="ver_downloading">Đang cập nhật</string>
+    <string name="ver_please_wait">Xin đợi...</string>
+    <string name="ver_no_update">Phiên bản hiện tại là phiên bản mới nhất</string>
+    <string name="ver_check_fail">Không thể kiểm tra cập nhật, vui lòng thử lại sau</string>
+    <string name="ver_cancel">Hủy</string>
+    <string name="ver_download_fail">Tải xuống thất bại</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+
+    /*Menu Button*/
+    <string name="Change_Data">Update data</string>
+    <string name="delete_all_data">Delete data</string>
+    <string name="code_item">Mã vật liệu</string>
+    /* activity_main */
+    <string name="main_id">Tài khoản：</string>
+    <string name="main_pwd">Mật khẩu：</string>
+    <string name="main_ok">Xác nhận</string>
+    <string name="main_cancel">Hủy bỏ</string>
+    <string name="main_E01">Xin nhập số tài khoản</string>
+    <string name="main_E02">Tài khoản hoặc mật khẩu không đúng</string>
+    <string name="main_E03">Liên kết máy chủ thất bại</string>
+    <string name="main_language">Ngôn ngữ</string>
+    <string name="main_stay_logged">Lưu tài khoản</string>
+    <string name="main_SignIn">Đăng ký tài khoản</string>
+    /*checklist*/
+    <string name="check_1">Biểu kiểm tra CKSP đầu tay</string>
+    <string name="check_2">Biểu kiểm tra CKSP tuần</string>
+    <string name="check_3">Biểu kiểm tra máy ép nhưa</string>
+    /* Sign In */
+    <string name="account">Tài khoản</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận Mật khẩu</string>
+    <string name="department">Bộ phận</string>
+    <string name="email">Mail</string>
+
+
+    /*quality_first*/
+    <string name="btn_ok">Xác nhận</string>
+    <string name="btn_forward">Kết chuyển</string>
+    <string name="btn_pileofsets">Đồng bộ</string>
+    <string name="list">Danh sách đã kiểm tra</string>
+    <string name="numericalorder">STT</string>
+    <string name="consumption">Ngày thao tác</string>
+    <string name="transitionstatus">Đã kết chuyển</string>
+    <string name="productappearance">Ngoại quan</string>
+    <string name="btn_query">Tra cứu</string>
+    <string name="btn_delete">Xóa</string>
+    <string name="btn_edit">Chỉnh sửa</string>
+    <string name="Product_No">Mã sản phẩm</string>>
+    <string name= "Agreed_shipping_date">Ngày giao hàng</string>">
+    <string name="POID">Mã đơn đặt hàng</string>>
+    <string name="number">Hạng mục</string>
+    <string name="quantity">Số lượng</string>
+    <string name="customer_id">MS khách hàng đưa hàng</string>
+    <string name="PO_customer">Mã số đơn đặt hàng của khách hàng</string>
+    <string name= "name_customer">Tên khách hàng</string>
+    <string name= "name_product">Tên sản phẩm</string>
+    <string name= "Trademark_code">Mã nhãn hiệu</string>
+    <string name="Mold_number">MS khuôn</string>
+    <string name = "specification_vn">Quy cách tiếng việt</string>
+    <string name ="name_product_vn">Tên sản phẩm tiếng việt</string>>
+    <string name= "Specifications">Quy cách </string>
+    <string name= "work_number">MS CT việc làm</string>
+</resources>
