@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.laprap001"
+    namespace = "com.example.OQC"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.laprap001"
+        applicationId = "com.example.OQC"
         minSdk = 29
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -53,5 +53,7 @@ dependencies {
     implementation ("com.google.android.material:material:1.12.0" )
     implementation ("com.github.Foysalofficial:NafisBottomNav:5.0")
     implementation("com.squareup.picasso:picasso:2.8")
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.github.chrisbanes:PhotoView:2.3.0")
 
 }

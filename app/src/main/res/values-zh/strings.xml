@@ -68,4 +68,11 @@
    <string name = "specification_vn">越文規格</string>
     <string name= "Specifications">規格</string>
     <string name= "work_number">工單編號</string>
+
+    <string name="not_achieved">Lưu</string>
+    <string name="achieved">Lưu</string>
+    <string name="check_cancel">取消</string>
+    <string name="btn_cancel">取消</string>
+    <string name="take_photo">拍張照片 </string>
+    <string name="check_time">檢查時間</string>
 </resources>

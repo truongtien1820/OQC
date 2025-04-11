@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "laprap001"
+rootProject.name = "OQC"
 include(":app")
  

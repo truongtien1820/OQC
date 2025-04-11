@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OQCxuathang</string>
-    /*check version*/
     <string name="ver_curr_version">Phiên bản hiện tại : </string>
     <string name="ver_new_version">Phiên bản mới：</string>
     <string name="ver_install">Xin hãy cài đặt!</string>
@@ -16,11 +15,10 @@
     <string name="navigation_drawer_open" />
     <string name="navigation_drawer_close" />
 
-    /*Menu Button*/
     <string name="Change_Data">Update data</string>
     <string name="delete_all_data">Delete data</string>
     <string name="code_item">Mã vật liệu</string>
-    /* activity_main */
+
     <string name="main_id">Tài khoản：</string>
     <string name="main_pwd">Mật khẩu：</string>
     <string name="main_ok">Xác nhận</string>
@@ -43,7 +41,6 @@
     <string name="email">Mail</string>
 
 
-    /*quality_first*/
     <string name="btn_ok">Xác nhận</string>
     <string name="btn_forward">Kết chuyển</string>
     <string name="btn_pileofsets">Đồng bộ</string>
@@ -70,4 +67,11 @@
     <string name ="name_product_vn">Tên sản phẩm tiếng việt</string>>
     <string name= "Specifications">Quy cách </string>
     <string name= "work_number">MS CT việc làm</string>
+
+    <string name="not_achieved">Không đạt</string>
+    <string name="achieved">Đạt</string>
+    <string name="check_cancel">Hủy bỏ</string>
+    <string name="btn_cancel">Hủy bỏ</string>
+    <string name="take_photo">Chụp hình </string>
+    <string name="check_time">Thời gian kiểm tra</string>
 </resources>

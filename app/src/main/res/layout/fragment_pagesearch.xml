@@ -29,6 +29,7 @@
         android:layout_gravity="center"
         android:background="@drawable/search_view_background"
         android:focusable="false"
+        android:inputType="textCapCharacters"
         app:iconifiedByDefault="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

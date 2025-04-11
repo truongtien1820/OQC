@@ -4,29 +4,43 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
+        android:id="@+id/contentLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/curved_background_checkimage"
+        android:background="@android:color/transparent"
         android:padding="16dp">
+        <ImageView
+            android:id="@+id/Imagestatus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/confime"
+            android:padding="5dp"
+            android:layout_gravity="end|top"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            >
-
+            android:padding="16dp">
             <ImageView
                 android:id="@+id/image_original"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_placeholder" />
+                android:src="@drawable/ic_placeholder"
+                android:adjustViewBounds="true"
+                android:maxWidth="300dp"
+                android:maxHeight="400dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"/>
 
             <TextView
-                android:id="@+id/titleTextView"
+                android:id="@+id/titleTextView_check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -37,20 +51,101 @@
         </LinearLayout>
 
 
+
+
         <Button
             android:id="@+id/btn_take_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:drawableStart="@drawable/ic_camera"
             android:layout_gravity="center"
-            android:text="Take Photo" />
+            android:padding="16dp"
+            android:background="@drawable/button_type_check"
+            android:text="@string/take_photo"
+            android:textColor="#E0E0E0"/>
 
-        <ImageView
-            android:id="@+id/image_captured"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewImagesCheck"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_placeholder"
-            android:contentDescription="Captured Image" />
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal" />
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnAchieved"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/achieved"
+                android:background="@drawable/button_type_check"
+                android:textColor="#E0E0E0"
+                android:backgroundTint="@null" />
+            <Button
+                android:id="@+id/btnNoAchieved"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="25dp"
+                android:layout_height="wrap_content"
+                android:text="@string/not_achieved"
+                android:background="@drawable/button_type_check"
+                android:textColor="#E0E0E0"
+                android:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/main_cancel"
+                android:backgroundTint="@null"
+                android:background="@drawable/button_type_check"
+                android:textColor="#E0E0E0"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/titletimecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="time"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="times new roman"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/titlelist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1/1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="times new roman"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

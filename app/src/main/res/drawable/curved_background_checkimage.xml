@@ -3,7 +3,7 @@
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="16dp" />
-            <solid android:color="#66000000" /> <!-- Màu bóng đổ (xám mờ) -->
+            <solid android:color="#4D474747" /> <!-- Màu bóng đổ (xám mờ) -->
         </shape>
     </item>
 

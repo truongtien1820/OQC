@@ -24,6 +24,7 @@
             />
 
     </LinearLayout>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/user"
         android:layout_width="match_parent"
@@ -65,7 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="IdUser"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     android:fontFamily="times new roman"
                     android:textColor="#A9A186"
                     android:layout_margin="10dp"
@@ -75,7 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Department"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     android:fontFamily="times new roman"
                     android:textColor="#A9A186"
                     android:layout_margin="10dp"
@@ -124,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Change_Data"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     android:fontFamily="times new roman"
                     android:textColor="#A9A186"
                     android:layout_margin="10dp"
@@ -134,7 +135,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/delete_all_data"
-                    android:textSize="20sp"
+                    android:textSize="17sp"
                     android:fontFamily="times new roman"
                     android:textColor="#A9A186"
                     android:layout_margin="10dp"
@@ -147,14 +148,205 @@
 
 
     </androidx.cardview.widget.CardView>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewImages"
+    <LinearLayout
+        android:id="@+id/old_PO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/user"/>
+        app:layout_constraintTop_toBottomOf="@id/user"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Old PO"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingStart="10dp"
+            android:textAlignment="textStart"
+            android:fontFamily="times new roman"
+            android:textColor="#A9A186"
+            />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleroldPO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/old_PO"/>
+    <!-- CardView cho Duration -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#F4CAC3"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/card_wifi"
+        app:layout_constraintTop_toBottomOf="@id/recycleroldPO">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times new roman"
+                android:text="Up data"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="times new roman"
+                android:text="Send data to server"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/push_data" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView cho Energy -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_wifi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#A9A9A9"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recycleroldPO">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi"
+                android:fontFamily="times new roman"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check status wifi"
+                android:textColor="@android:color/white"
+                android:fontFamily="times new roman"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/wifi_status_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/wifi_full" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView cho Distance -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_distance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#D0F6F4"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/card_elevation"
+        app:layout_constraintTop_toBottomOf="@id/card_update">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some thing"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some thing"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/ic_distance" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView cho Elevation -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_elevation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#F4E5D4"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toEndOf="@id/card_distance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_wifi">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some thing"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some thing"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:src="@drawable/ic_elevation" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
